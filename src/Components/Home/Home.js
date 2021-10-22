@@ -1,21 +1,46 @@
 import React from 'react';
+import useMedicine from '../../Hooks/Medicine/useMedicine';
+import Product from '../Product/Product';
 import './Home.css'
 
 const Home = () => {
+    const { medicines, setMedicines } = useMedicine();
+
     return (
         <div>
             <div className="">
 
-                <div className="flex">
+                <div className="flex mb-5">
                     <img className="home-img mx-auto" src="https://image.shutterstock.com/image-vector/pharmacy-store-concept-vector-infographic-260nw-1388104772.jpg" alt="" />
-
-                    {/* <img className="home-img text-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfgOMbVyv7YIAjoUtm2wZqVNQqHiU6gN0Lw&usqp=CAU" alt="" /> */}
                 </div>
 
-                {/* <img src="https://cms-contents.pharmeasy.in/banner/0d4d2e4bc31-DWEBSUPR25.jpg?dim=1440x0&dpr=1.5&q=100" alt="" />
 
-                <img src="https://www.banglameds.com.bd/media/baner/1584343752084.jpg" alt="" /> */}
             </div>
+            <h2 className="text-5xl font-bold text-center mb-3">Medicine's</h2>
+            <div className="grid grid-cols-3 mb-5">
+
+                {
+                    medicines.map(medicine => <Product key={medicine.id} medicine={medicine}></Product>)
+                }
+            </div>
+
+            <h2 className="text-5xl font-bold text-center mb-3 text-red-500"> Oxyzen </h2>
+
+            <div className="grid grid-cols-2">
+                <img className="oxyzen m-4 mt-6" src="https://image.shutterstock.com/image-photo/closeup-medical-oxygen-flow-meter-260nw-1318811957.jpg" alt="" />
+                <h2 className="text-4xl font-bold ml-10 m-4 mt-8 text-gray-500">We provide Emergency Oxygen by our transport. Coustomer is our family.</h2>
+            </div>
+
+
+            <h2 className="text-5xl font-bold text-center mb-3 text-red-500">Amblunce</h2>
+            <div className="grid grid-cols-2">
+                <h2 className="text-4xl font-bold ml-10 m-4 mt-8 text-gray-500">
+                    We provide Emergency Ambulence service with all advance equipment  support for patient.
+                </h2>
+
+                <img className="ambulence mt-6" src="https://media.gettyimages.com/photos/ambulance-picture-id1055097788?s=612x612" alt="" />
+            </div>
+
         </div>
     );
 };

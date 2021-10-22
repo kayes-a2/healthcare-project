@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Buying from './Components/Buying/Buying/Buying';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
@@ -10,6 +11,7 @@ import Service from './Components/Service/Service';
 function App() {
   return (
     <div >
+
       <Router>
 
         <Header></Header>
@@ -32,6 +34,10 @@ function App() {
             <Service></Service>
           </Route>
 
+          <Route path="/buying/:medicineId">
+            <Buying></Buying>
+          </Route>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
@@ -41,8 +47,6 @@ function App() {
         <Footer></Footer>
 
       </Router>
-
-
 
     </div>
   );

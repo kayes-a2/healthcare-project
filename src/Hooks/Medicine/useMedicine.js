@@ -1,13 +1,13 @@
 const { useState, useEffect } = require("react")
 
 const useMedicine = () => {
-    const [medicine, setMedicine] = useState([]);
+    const [medicines, setMedicines] = useState([]);
     useEffect(() => {
         fetch('./fakedb.JSON')
             .then(res => res.json())
-            .then(data => setMedicine(data))
+            .then(data => setMedicines(data))
     }, []);
-    return { medicine, setMedicine };
+    return { medicines, setMedicines };
 };
 
 export default useMedicine;

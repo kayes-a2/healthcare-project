@@ -20,7 +20,7 @@ const medicine = [
         id: 3,
         name: "Saline (water)",
         price: 369,
-        image: "2wCEAAkGBw8TBg8PDRARDw8ODRAPDRAQDxsNDxAQFxEaFhYRExUYHSwgGBolGxYVITEhJSwrMDAuFyszODosNyg5MC4BCgoKDg0NFhAPGi0lHiU3LS0vNy0rNS0rNy0vNzcwLS0rKy03NS0tLSs1Lys3LS0tNy4wLC4rKzAtLS83NSs3K",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjkaa9-KZKkpK43B_yRYlfYnx_ntsgfPM8Q&usqp=CAU",
         description: "As an adjective, saline means salty, containing salt.As a noun saline is a salt solution, often adjusted to the normal salinity of the human body. Salt, in medicine, is referring to sodium chloride. Sodium chloride is common table salt and the salt concentrated in the earth and in sea water."
     },
 
@@ -36,8 +36,8 @@ const medicine = [
         id: 5,
         name: "Insulin",
         price: 415,
-        image: "2wCEAAoHCBEREREREhIREhEREBERERERERISERERGRQaGRgaGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCs0NDQ0NDE0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDE0NDQ0NDQ0NP",
-        description: "Insulin is a hormone made in your pancreas. It helps your body use glucose (sugar) for energy. In type 1 diabetes your pancreas no longer makes insulin, so you have to inject it to control your blood glucose levels. There are different types of insulin, taken at different times."
+        image: "https://image.shutterstock.com/image-photo/insulin-ampoule-syringe-isolated-against-260nw-739544254.jpg",
+        descriptions: "Insulin is a hormone made in your pancreas. It helps your body use glucose (sugar) for energy. In type 1 diabetes your pancreas no longer makes insulin, so you have to inject it to control your blood glucose levels. There are different types of insulin, taken at different times."
 
     },
     {
