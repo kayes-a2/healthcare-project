@@ -4,9 +4,9 @@ website name : Medications.
 
 live link :
 
-firebase link : https://jovial-bassi-abe9a7.netlify.app/
+firebase link : https://medications-28b66.web.app/
 
-github link : https://github.com/ProgrammingHeroWC4/the-superhero-direction-kayes-a2
+github link : https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-kayes-a2
 
 About this site:
 
