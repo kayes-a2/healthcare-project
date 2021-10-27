@@ -1,8 +1,12 @@
+//import component's & react external node pakage
+
 import React from 'react';
 import img from '../../Images/download (15).jfif'
 
+//contact component arrow function
 const Contact = () => {
     return (
+        //full contact part of html (jsx) 
         <div>
             <div className=" text-6xl flex">
                 <img className="w-6/12 m-4 mt-1" src={img} alt="" />
@@ -33,4 +37,5 @@ const Contact = () => {
     );
 };
 
+//export contact component
 export default Contact;

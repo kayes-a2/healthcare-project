@@ -1,9 +1,14 @@
+//import component's & react external node pakage
+
 import React from 'react';
 
+//footer component arrow function
 const Footer = () => {
     return (
+        //full footer part of html (jsx) 
         <div>
-            <div className="bg-gray-400 p-20 ">
+            <div className="bg-gray-400 p-20 footer ">
+
                 <h2 className="text-2xl text-center mb-10 font-bold ">Your own pharmacy. Next to your door.</h2>
                 <div className="  grid grid-cols-4">
 
@@ -48,4 +53,5 @@ const Footer = () => {
     );
 };
 
+//export footer component
 export default Footer;

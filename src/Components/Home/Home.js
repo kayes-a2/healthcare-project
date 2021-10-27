@@ -1,27 +1,32 @@
+//import component's & external css & react external node pakage
+
 import React from 'react';
-import useMedicine from '../../Hooks/Medicine/useMedicine';
+import useMedicine from '../../hooks/Medicine/useMedicine';
 import Product from '../Product/Product';
 import './Home.css'
 
+//home component arrow function
 const Home = () => {
+    //use coustom hook
     const { medicines, setMedicines } = useMedicine();
 
     return (
+        //full home part of html (jsx) 
         <div>
             <div className="">
-
                 <div className="flex mb-5">
                     <img className="home-img mx-auto" src="https://image.shutterstock.com/image-vector/pharmacy-store-concept-vector-infographic-260nw-1388104772.jpg" alt="" />
                 </div>
 
-
             </div>
-            <h2 className="text-5xl font-bold text-center mb-3">Medicine's</h2>
-            <div className="grid grid-cols-3 mb-5">
+            <div id="medicine">
+                <h2 className="text-5xl font-bold text-center mb-3">Medicine's</h2>
+                <div className="grid grid-cols-3 mb-5">
 
-                {
-                    medicines.map(medicine => <Product key={medicine.id} medicine={medicine}></Product>)
-                }
+                    {
+                        medicines.map(medicine => <Product key={medicine.id} medicine={medicine}></Product>)
+                    }
+                </div>
             </div>
 
             <h2 className="text-5xl font-bold text-center mb-3 text-red-500"> Oxyzen </h2>
@@ -45,4 +50,5 @@ const Home = () => {
     );
 };
 
+//export home component
 export default Home;

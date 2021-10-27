@@ -1,7 +1,11 @@
+//import component's & react external node pakage
+
 import React from 'react';
 
+//srvice component arrow function
 const Service = () => {
     return (
+        //full service part of html (jsx) 
         <div>
             <div className="">
                 <h2 className="text-center font-bold text-3xl my-5 text-indigo-400">We provie Top Class All of facilities service's</h2>
@@ -15,4 +19,5 @@ const Service = () => {
     );
 };
 
+//export service component
 export default Service;
